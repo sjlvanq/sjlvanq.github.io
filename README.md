@@ -1,2 +1,0 @@
-# sjlvanq.github.io
-WEB

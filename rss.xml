@@ -2,19 +2,19 @@
 <?xml-stylesheet type="text/css" href="http://localhost/please/edit/me/styles/feed.css"?>
 <rss version="2.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:admin="http://webns.net/mvcb/" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<title>Sjlvanq NanoBLog</title>
+<title>My Weblog</title>
 <atom:link href="http://localhost/please/edit/me/rss.xml" rel="self" type="application/rss+xml" />
 <link>http://localhost/please/edit/me</link>
 <description>news, diary, journal, whatever</description>
-<dc:language>es-ar</dc:language>
+<dc:language>en-us</dc:language>
 <dc:creator>alumno</dc:creator>
-<dc:date>2015-10-05T18:11:18-03:00</dc:date>
+<dc:date>2015-10-05T20:10:38-03:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
 <item>
 <link>http://localhost/please/edit/me/archives/2015/10/05/welcome_to_nanoblogger_3_4_2/index.html</link>
 <guid isPermaLink="true">http://localhost/please/edit/me/archives/2015/10/05/welcome_to_nanoblogger_3_4_2/index.html</guid>
 <title>Welcome to NanoBlogger 3.4.2!</title>
-<dc:date>2015-10-05T18:11:15-03:00</dc:date>
+<dc:date>2015-10-05T20:10:35-03:00</dc:date>
 <dc:creator>n1xt3r</dc:creator>
 <dc:subject>nanoblogger-help</dc:subject>
 <description>
