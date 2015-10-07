@@ -1,0 +1,29 @@
+TITLE: ¿Cómo cambiar el idioma en nanoblogger?
+AUTHOR: sjlvanq
+DATE: mar oct  6 19:57:50 ART 2015
+DESC: procedimiento para configurar el idioma en nanoblogger, internacionalización, i18n
+FORMAT: markdown
+-----
+BODY:
+El procedimiento para configurar el soporte multi-idioma de nanobloger es muy sencillo, aunque el [Manual de Usuario](http://nanoblogger.sourceforge.net/docs/nanoblogger.html "Manual de usuario de Nanoblogger") no ayuda demasiado a un usuario de Debian GNU/Linux (Jessie) que haya instalado Nanoblogger desde los repositorios oficiales.
+
+Por empezar, si utilizamos Debian GNU/Linux, el paquete de instalación de nanoblogger (correspondiente a la versión 3.4.2-3) no incluye los archivos de traducción para otros idiomas. Estos los conseguiremos instalando el paquete nanoblogger-extras, que contiene los archivos de traducción para alemán, español, francés y turco (además de otras plantillas, estilos y plugins). Todos estos archivos se instalan en el directorio /usr/share/nanoblogger-extra/lang
+
+Para configurar el soporte de idioma en nuestro blog lo que debemos hacer es copiar o vincular los directorios /usr/share/nanoblogger-extras/lang/ con /usr/share/nanoblogger/lang/. Esto lo podemos hacer creando un enlace simbólico:
+
+    sudo ln -s /usr/share/nanoblogger-extra/lang/* /usr/share/nanoblogger/lang/
+
+No funcionará si lo copiamos dentro del directorio de nuestro blog.
+
+El paso siguiente consiste en editar el archivo /etc/nanoblogger/nb.conf o ./raiz-de-nuestro-blog/blog.conf y editar (o añadir) la siguiente pareja de valores:
+
+    NB_LANG="es"
+
+Con esto ya podremos actualizar el nanoblog: nb -d directorio-al-blog -u all
+
+Y disfrutar de nanoblogger en nuestro idioma. 
+Las traducciones se aplican, tanto al blog como a la salida de comandos e incluso a la ayuda.
+
+Hasta la próxima! Donde, tal vez, exponga las razones por las cuales es preferible descargar Nanoblogger (3.5-rcl) desde su [sitio oficial](http://nanoblogger.sourceforge.net "Nanoblogger Web") y NO obtenerlo a través de los repositorios de paquetes de Debian. 
+
+END-----

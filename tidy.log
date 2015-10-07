@@ -1,18 +1,5 @@
 
-tidy validating ./sjlvanq-nanoblog/atom.xml:
-
-line 59 column 70 - Warning: unescaped & or unknown entity "&group_id"
-line 59 column 86 - Warning: unescaped & or unknown entity "&atid"
-2 warnings, 0 errors were found!
-
-
-To learn more about HTML Tidy see http://tidy.sourceforge.net
-Please fill bug reports and queries using the "tracker" on the Tidy web site.
-Additionally, questions can be sent to html-tidy@w3.org
-HTML and CSS specifications are available from http://www.w3.org/
-Lobby your company to join W3C, see http://www.w3.org/Consortium
-
-tidy validating ./sjlvanq-nanoblog/rss.xml:
+tidy validating /home/alumno/www/sjqblog/atom.xml:
 
 No warnings or errors were found.
 
@@ -23,13 +10,9 @@ Additionally, questions can be sent to html-tidy@w3.org
 HTML and CSS specifications are available from http://www.w3.org/
 Lobby your company to join W3C, see http://www.w3.org/Consortium
 
-tidy validating ./sjlvanq-nanoblog/articles/example/index.html:
+tidy validating /home/alumno/www/sjqblog/rss.xml:
 
-line 64 column 1 - Warning: inserting implicit <p>
-line 64 column 1 - Warning: trimming empty <p>
-Info: Doctype given is "-//W3C//DTD XHTML 1.1//EN"
-Info: Document content looks like XHTML 1.1
-2 warnings, 0 errors were found!
+No warnings or errors were found.
 
 
 To learn more about HTML Tidy see http://tidy.sourceforge.net
@@ -38,7 +21,7 @@ Additionally, questions can be sent to html-tidy@w3.org
 HTML and CSS specifications are available from http://www.w3.org/
 Lobby your company to join W3C, see http://www.w3.org/Consortium
 
-tidy validating ./sjlvanq-nanoblog/archives/index.html:
+tidy validating /home/alumno/www/sjqblog/archives/index.html:
 
 Info: Doctype given is "-//W3C//DTD XHTML 1.1//EN"
 Info: Document content looks like XHTML 1.1
@@ -51,7 +34,7 @@ Additionally, questions can be sent to html-tidy@w3.org
 HTML and CSS specifications are available from http://www.w3.org/
 Lobby your company to join W3C, see http://www.w3.org/Consortium
 
-tidy validating ./sjlvanq-nanoblog/archives/nanoblogger-help/index.html:
+tidy validating /home/alumno/www/sjqblog/archives/nanoblogger-help/index.html:
 
 Info: Doctype given is "-//W3C//DTD XHTML 1.1//EN"
 Info: Document content looks like XHTML 1.1
@@ -64,12 +47,22 @@ Additionally, questions can be sent to html-tidy@w3.org
 HTML and CSS specifications are available from http://www.w3.org/
 Lobby your company to join W3C, see http://www.w3.org/Consortium
 
-tidy validating ./sjlvanq-nanoblog/archives/2015/index.html:
+tidy validating /home/alumno/www/sjqblog/archives/2015/index.html:
 
+line 52 column 3 - Warning: <a> escaping malformed URI reference
 Info: Doctype given is "-//W3C//DTD XHTML 1.1//EN"
 Info: Document content looks like XHTML 1.1
-No warnings or errors were found.
+1 warning, 0 errors were found!
 
+
+URIs must be properly escaped, they must not contain unescaped
+characters below U+0021 including the space character and not
+above U+007E. Tidy escapes the URI for you as recommended by
+HTML 4.01 section B.2.1 and XML 1.0 section 4.2.2. Some user agents
+use another algorithm to escape such URIs and some server-sided
+scripts depend on that. If you want to depend on that, you must
+escape the URI by your own. For more information please refer to
+http://www.w3.org/International/O-URL-and-ident.html
 
 To learn more about HTML Tidy see http://tidy.sourceforge.net
 Please fill bug reports and queries using the "tracker" on the Tidy web site.
@@ -77,48 +70,96 @@ Additionally, questions can be sent to html-tidy@w3.org
 HTML and CSS specifications are available from http://www.w3.org/
 Lobby your company to join W3C, see http://www.w3.org/Consortium
 
-tidy validating ./sjlvanq-nanoblog/archives/2015/10/index.html:
+tidy validating /home/alumno/www/sjqblog/archives/2015/10/index.html:
 
 line 63 column 1 - Warning: plain text isn't allowed in <tr> elements
 line 53 column 1 - Info: <tr> previously mentioned
-line 144 column 70 - Warning: unescaped & or unknown entity "&group_id"
-line 144 column 86 - Warning: unescaped & or unknown entity "&atid"
+line 145 column 3 - Warning: <a> escaping malformed URI reference
+Info: Doctype given is "-//W3C//DTD XHTML 1.1//EN"
+Info: Document content looks like XHTML 1.1
+2 warnings, 0 errors were found!
+
+
+URIs must be properly escaped, they must not contain unescaped
+characters below U+0021 including the space character and not
+above U+007E. Tidy escapes the URI for you as recommended by
+HTML 4.01 section B.2.1 and XML 1.0 section 4.2.2. Some user agents
+use another algorithm to escape such URIs and some server-sided
+scripts depend on that. If you want to depend on that, you must
+escape the URI by your own. For more information please refer to
+http://www.w3.org/International/O-URL-and-ident.html
+
+To learn more about HTML Tidy see http://tidy.sourceforge.net
+Please fill bug reports and queries using the "tracker" on the Tidy web site.
+Additionally, questions can be sent to html-tidy@w3.org
+HTML and CSS specifications are available from http://www.w3.org/
+Lobby your company to join W3C, see http://www.w3.org/Consortium
+
+tidy validating /home/alumno/www/sjqblog/archives/2015/10/06/welcome_to_nanoblogger_3_5/index.html:
+
+line 52 column 1 - Warning: <a> escaping malformed URI reference
+Info: Doctype given is "-//W3C//DTD XHTML 1.1//EN"
+Info: Document content looks like XHTML 1.1
+1 warning, 0 errors were found!
+
+
+URIs must be properly escaped, they must not contain unescaped
+characters below U+0021 including the space character and not
+above U+007E. Tidy escapes the URI for you as recommended by
+HTML 4.01 section B.2.1 and XML 1.0 section 4.2.2. Some user agents
+use another algorithm to escape such URIs and some server-sided
+scripts depend on that. If you want to depend on that, you must
+escape the URI by your own. For more information please refer to
+http://www.w3.org/International/O-URL-and-ident.html
+
+To learn more about HTML Tidy see http://tidy.sourceforge.net
+Please fill bug reports and queries using the "tracker" on the Tidy web site.
+Additionally, questions can be sent to html-tidy@w3.org
+HTML and CSS specifications are available from http://www.w3.org/
+Lobby your company to join W3C, see http://www.w3.org/Consortium
+
+tidy validating /home/alumno/www/sjqblog/archives/2015/10/06/_cómo_cambiar_el_idioma_en_nanoblogger/index.html:
+
+line 86 column 3 - Warning: <a> escaping malformed URI reference
+Info: Doctype given is "-//W3C//DTD XHTML 1.1//EN"
+Info: Document content looks like XHTML 1.1
+1 warning, 0 errors were found!
+
+
+URIs must be properly escaped, they must not contain unescaped
+characters below U+0021 including the space character and not
+above U+007E. Tidy escapes the URI for you as recommended by
+HTML 4.01 section B.2.1 and XML 1.0 section 4.2.2. Some user agents
+use another algorithm to escape such URIs and some server-sided
+scripts depend on that. If you want to depend on that, you must
+escape the URI by your own. For more information please refer to
+http://www.w3.org/International/O-URL-and-ident.html
+
+To learn more about HTML Tidy see http://tidy.sourceforge.net
+Please fill bug reports and queries using the "tracker" on the Tidy web site.
+Additionally, questions can be sent to html-tidy@w3.org
+HTML and CSS specifications are available from http://www.w3.org/
+Lobby your company to join W3C, see http://www.w3.org/Consortium
+
+tidy validating /home/alumno/www/sjqblog/index.html:
+
+line 63 column 1 - Warning: plain text isn't allowed in <tr> elements
+line 53 column 1 - Info: <tr> previously mentioned
+line 119 column 25 - Warning: <a> escaping malformed URI reference
+line 206 column 3 - Warning: <a> escaping malformed URI reference
 Info: Doctype given is "-//W3C//DTD XHTML 1.1//EN"
 Info: Document content looks like XHTML 1.1
 3 warnings, 0 errors were found!
 
 
-To learn more about HTML Tidy see http://tidy.sourceforge.net
-Please fill bug reports and queries using the "tracker" on the Tidy web site.
-Additionally, questions can be sent to html-tidy@w3.org
-HTML and CSS specifications are available from http://www.w3.org/
-Lobby your company to join W3C, see http://www.w3.org/Consortium
-
-tidy validating ./sjlvanq-nanoblog/archives/2015/10/05/welcome_to_nanoblogger_3_4_2/index.html:
-
-line 86 column 70 - Warning: unescaped & or unknown entity "&group_id"
-line 86 column 86 - Warning: unescaped & or unknown entity "&atid"
-Info: Doctype given is "-//W3C//DTD XHTML 1.1//EN"
-Info: Document content looks like XHTML 1.1
-2 warnings, 0 errors were found!
-
-
-To learn more about HTML Tidy see http://tidy.sourceforge.net
-Please fill bug reports and queries using the "tracker" on the Tidy web site.
-Additionally, questions can be sent to html-tidy@w3.org
-HTML and CSS specifications are available from http://www.w3.org/
-Lobby your company to join W3C, see http://www.w3.org/Consortium
-
-tidy validating ./sjlvanq-nanoblog/index.html:
-
-line 63 column 1 - Warning: plain text isn't allowed in <tr> elements
-line 53 column 1 - Info: <tr> previously mentioned
-line 204 column 70 - Warning: unescaped & or unknown entity "&group_id"
-line 204 column 86 - Warning: unescaped & or unknown entity "&atid"
-Info: Doctype given is "-//W3C//DTD XHTML 1.1//EN"
-Info: Document content looks like XHTML 1.1
-3 warnings, 0 errors were found!
-
+URIs must be properly escaped, they must not contain unescaped
+characters below U+0021 including the space character and not
+above U+007E. Tidy escapes the URI for you as recommended by
+HTML 4.01 section B.2.1 and XML 1.0 section 4.2.2. Some user agents
+use another algorithm to escape such URIs and some server-sided
+scripts depend on that. If you want to depend on that, you must
+escape the URI by your own. For more information please refer to
+http://www.w3.org/International/O-URL-and-ident.html
 
 To learn more about HTML Tidy see http://tidy.sourceforge.net
 Please fill bug reports and queries using the "tracker" on the Tidy web site.
