@@ -6,9 +6,9 @@
 <atom:link href="http://localhost/please/edit/me/rss.xml" rel="self" type="application/rss+xml" />
 <link>http://localhost/please/edit/me</link>
 <description>news, diary, journal, whatever y más</description>
-<dc:language>en-us</dc:language>
+<dc:language>es-ar</dc:language>
 <dc:creator>sjlvanq</dc:creator>
-<dc:date>2015-10-06T23:05:46-03:00</dc:date>
+<dc:date>2015-10-06T23:18:15-03:00</dc:date>
 <admin:generatorAgent rdf:resource="http://nanoblogger.sourceforge.net" />
 <item>
 <link>http://localhost/please/edit/me/archives/2015/10/06/_cómo_cambiar_el_idioma_en_nanoblogger/index.html</link>
