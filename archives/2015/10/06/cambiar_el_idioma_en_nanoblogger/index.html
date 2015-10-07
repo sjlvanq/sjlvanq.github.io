@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+<meta http-equiv="Content-Type" content=
+"text/html; charset=utf-8" />
+<meta name="generator" content="NanoBlogger 3.5-RC1" />
+<meta name="description" content=
+"procedimiento para configurar el idioma español en nanoblogger" />
+<meta name="robots" content="all" />
+<meta name="revisit-after" content="31 days" />
+<title>Cambiar el idioma en nanoblogger | Sjlvanq</title>
+<link rel="stylesheet" href="../../../../../styles/nb_default.css"
+type="text/css" media="all" />
+<link rel="stylesheet" href="../../../../../styles/print.css" type=
+"text/css" media="print" />
+<link rel="shortcut icon" href=
+"../../../../../images/favicon.ico" />
+<link rel="alternate" type="application/atom+xml" title="Atom 1.0"
+href="../../../../../atom.xml" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0"
+href="../../../../../rss.xml" />
+</head>
+<body>
+<div id="banner">
+<h1><a href="../../../../../index.html" accesskey=
+"1">Sjlvanq</a></h1>
+<span class="description">news, diary, journal, whatever y
+más</span></div>
+<!-- /banner div -->
+<div id="container">
+<div class="archives"><a id="top"></a>
+<div id="menu"><a href="../../../../../index.html">Ppal.</a> &gt;
+<a href="../../../../../archives/index.html">Archivos</a> &gt;
+<a href="../../../../../archives/2015/index.html">2015</a> &gt; 
+<!-- comment out next line when month archives are disabled -->
+ <a href="../../../../../archives/2015/10/index.html">10</a> &gt; 
+<!-- uncomment next line when day archives are enabled -->
+ 
+<!-- <a href="../../../../../archives/2015/10/06/index.html">06</a> &#62; -->
+<br />
+<a href=
+"../../../../../archives/2015/10/06/welcome_to_nanoblogger_3_5/index.html">
+&lt;</a> 
+<!-- uncomment next line when month or day archives are disabled -->
+ <!-- 10/06 -->
+ 19:57:50</div>
+<h2 class="date">mar oct 6 19:57:50 ART 2015</h2>
+<div class="blogbody"><a id="e2015-10-06T19_57_50.txt"></a>
+<h3 class="title">Cambiar el idioma en nanoblogger</h3>
+<p>El procedimiento para configurar el soporte multi-idioma de
+nanobloger es muy sencillo, aunque el <a href=
+"http://nanoblogger.sourceforge.net/docs/nanoblogger.html" title=
+"Manual de usuario de Nanoblogger">Manual de Usuario</a> no ayuda
+demasiado a un usuario de Debian GNU/Linux (Jessie) que haya
+instalado Nanoblogger desde los repositorios oficiales.</p>
+<p>Por empezar, si utilizamos Debian GNU/Linux, el paquete de
+instalación de nanoblogger (correspondiente a la versión 3.4.2-3)
+no incluye los archivos de traducción para otros idiomas. Estos los
+conseguiremos instalando el paquete nanoblogger-extras, que
+contiene los archivos de traducción para alemán, español, francés y
+turco (además de otras plantillas, estilos y plugins). Todos estos
+archivos se instalan en el directorio
+/usr/share/nanoblogger-extra/lang</p>
+<p>Para configurar el soporte de idioma en nuestro blog lo que
+debemos hacer es copiar o vincular los directorios
+/usr/share/nanoblogger-extras/lang/ con
+/usr/share/nanoblogger/lang/. Esto lo podemos hacer creando un
+enlace simbólico:</p>
+<pre>
+<code>sudo ln -s /usr/share/nanoblogger-extra/lang/* /usr/share/nanoblogger/lang/
+</code>
+</pre>
+<p>No funcionará si lo copiamos dentro del directorio de nuestro
+blog.</p>
+<p>El paso siguiente consiste en editar el archivo
+/etc/nanoblogger/nb.conf o ./raiz-de-nuestro-blog/blog.conf y
+editar (o añadir) la siguiente pareja de valores:</p>
+<pre>
+<code>NB_LANG="es"
+</code>
+</pre>
+<p>Con esto ya podremos actualizar el nanoblog: nb -d
+directorio-al-blog -u all</p>
+<p>Y disfrutar de nanoblogger en nuestro idioma. Las traducciones
+se aplican, tanto al blog como a la salida de comandos e incluso a
+la ayuda.</p>
+<p>Hasta la próxima! Donde, tal vez, exponga las razones por las
+cuales es preferible descargar Nanoblogger (3.5-rcl) desde su
+<a href="http://nanoblogger.sourceforge.net" title=
+"Nanoblogger Web">sitio oficial</a> y NO obtenerlo a través de los
+repositorios de paquetes de Debian.</p>
+</div>
+<div class="posted"><br />
+Posteado por sjlvanq | <a class="link" href=
+"../../../../../archives/2015/10/06/cambiar_el_idioma_en_nanoblogger/index.html">
+Link Permanente</a> 
+<!-- <br /><a href="../../../../../archives/2015/10/06/cambiar_el_idioma_en_nanoblogger/index.html#comments">Comentarios</a> --></div>
+<div class="menu"><a href="#top">/\</a></div>
+</div>
+<!-- /archives div --></div>
+<!-- /container div -->
+</body>
+</html>

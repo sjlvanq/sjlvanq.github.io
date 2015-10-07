@@ -1,7 +1,7 @@
-TITLE: ¿Cómo cambiar el idioma en nanoblogger?
+TITLE: Cambiar el idioma en nanoblogger
 AUTHOR: sjlvanq
 DATE: mar oct  6 19:57:50 ART 2015
-DESC: procedimiento para configurar el idioma en nanoblogger, internacionalización, i18n
+DESC: procedimiento para configurar el idioma español en nanoblogger
 FORMAT: markdown
 -----
 BODY:
